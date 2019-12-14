@@ -1,11 +1,11 @@
 # Site settings
-author: Anupama Gadde
-title: 
+author: Anupama
+title: Why did you decide to learn software engineering?
 header-img: img/home-bg.png
 email: anupamagadde@yahoo.com
-copyright_name: Anupama Gadde
+copyright_name: Anupama
 description: > # this means to ignore newlines until "baseurl:"
-  
+  A new adventure
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  anudukkipati

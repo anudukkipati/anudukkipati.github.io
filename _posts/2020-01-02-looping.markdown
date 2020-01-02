@@ -1,0 +1,178 @@
+---
+layout: post
+title:      "LOOPING...."
+date:       2020-01-02 12:45:42 +0000
+permalink:  looping
+---
+
+
+Programming construct called Looping can be used to repeat code, for example, a code that might ask for user’s input repeatedly. So, looping occurs when you tell a program do something a certain number of times. These are some of the methods to loop, namely, Loop, Times, While & Until.
+
+Let’s look at these methods.
+
+The `loop` method is the simplest looping construct in Ruby. It starts with a `loop` keyword followed by `do` and `end` with code block (delimited set of program instructions) between them. It doesn’t take any arguments. Here is an example-
+
+```
+                         loop do
+												 
+                            puts “I can do this forever”
+														
+                          end
+
+```
+
+It can also be written using curly braces-
+
+```
+           loop {puts "I can do this forever"}
+```
+
+The above code creates an infinite loop which might crash our computers. And that is not something we would want our code to do. 
+We can control the loop using `break` keyword-
+
+```
+                  loop do
+									
+                         puts "I am not going to run forever"
+												 
+                         break
+
+                  end   
+	```
+	
+	
+The above code runs exactly once as the `break` keyword ends the loop.
+
+We can use a counter to tell our code to run certain number of times –
+
+      ``` 
+			
+			counter = 0 #start a counter & set it to 0 outside the loop
+			
+          loop do 
+					
+             puts "I am counter number #{counter}"
+						
+             counter = counter + 1 # increment the counter by 1(current value of counter + 1)
+						
+             if counter >= 10 # If our counter is 10 or more
+						
+                break  #stop executing the loop
+							 
+             end
+						
+         end
+				 
+				 
+		```
+
+
+
+The above program will run 10 times-
+```
+I am counter number 0
+I am counter number 1
+I am counter number 2
+I am counter number 3
+I am counter number 4
+I am counter number 5
+I am counter number 6
+I am counter number 7
+I am counter number 8
+I am counter number 9
+=> nil
+
+```
+
+`times` is another construct for looping. It is an instance method of class Integer, which means it must be called as a method on integers. It will execute the block a certain number of times which is dependent on the number that is called. And at the end of the method, it will return the integer it was called on. Here is an example-
+
+```
+           4.times do
+           
+                puts "The rain in Spain stays mainly in the plain!"
+								
+            end
+
+```
+
+It will execute the code exactly 4 times and returns 4 at the end--
+
+```
+The rain in Spain stays mainly in the plain!
+The rain in Spain stays mainly in the plain!
+The rain in Spain stays mainly in the plain!
+The rain in Spain stays mainly in the plain!
+=> 4
+
+```
+
+The `while` construct method will execute a block as long as a specific condition is true. The block starts with a `while` keyword and ends with end. The code between `while` and end is the body of the `while` loop. 
+Here is an example-
+
+```
+              counter = 0
+							
+               while counter <= 10
+							 
+                    puts "I am counter number #{counter}"
+										
+                    counter = counter + 1
+										
+               end
+							 
+               puts "Done"
+
+```
+
+The above code runs as long as the condition counter <= 10 is true. With each iteration, the counter is incremented by 1 and when the counter becomes 11 (it is no longer <= 10) the condition becomes false and the loop terminates.
+
+```
+I am counter number 0
+I am counter number 1
+I am counter number 2
+I am counter number 3
+I am counter number 4
+I am counter number 5
+I am counter number 6
+I am counter number 7
+I am counter number 8
+I am counter number 9
+I am counter number 10
+Done
+=> nil
+
+```
+
+The `until` construct is the opposite of `while`, that is, the code following `until` will execute while the condition is false or until the condition is true.
+
+```
+           counter = 1
+					 
+            until counter > 10
+						
+                puts "I am counter number #{counter}"
+								
+                counter = counter + 1
+								
+            end
+
+```
+
+The code executes as long as the condition counter > 10 is false or until the condition is true which is when the counter becomes 11 which is greater than 10.
+
+```
+I am counter number 1
+I am counter number 2
+I am counter number 3
+I am counter number 4
+I am counter number 5
+I am counter number 6
+I am counter number 7
+I am counter number 8
+I am counter number 9
+I am counter number 10
+=> nil
+
+```
+
+That’s it for now. 

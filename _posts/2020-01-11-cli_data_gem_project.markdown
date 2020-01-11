@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Data Gem Project"
-date:       2020-01-11 20:38:06 +0000
+date:       2020-01-11 15:38:07 -0500
 permalink:  cli_data_gem_project
 ---
 
